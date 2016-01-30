@@ -1,7 +1,11 @@
 package ua.npu.project.library;
 
-/**
- * Created by student229a on 30.01.2016.
+//Газета
+/* Що потрібно зробити в цьому класі
+TODO Додати властивість "public int pages" (кількість сторінок)
+TODO
+
  */
+
 public class Magazine extends Publication {
 }
