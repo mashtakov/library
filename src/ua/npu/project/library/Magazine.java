@@ -1,6 +1,6 @@
 package ua.npu.project.library;
 
-//Газета//
+//Газета
 
 
 public class Magazine extends Publication {
