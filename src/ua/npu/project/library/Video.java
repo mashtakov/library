@@ -4,8 +4,8 @@ package ua.npu.project.library;
 
 public class Video extends Publication{
 
-    public String format;
-    public double lenght;
+    protected String format;
+    protected double lenght;
 
     public Video(String format, double lenght) {
         this.format = format;

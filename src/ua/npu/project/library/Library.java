@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Library {
     //Властивості обʼєкта "Бібліотека"
     public ArrayList<ReadingRoom> rooms;
-    public ArrayList<Publication> publications;
+    public ArrayList<Publication> gives;
     public CardIndex cardIndex;
 
     /*Конструктор бібліотеки, що приймає три параметри:
@@ -15,9 +15,9 @@ public class Library {
      2)список видань
      3)картотека (одна, не список! в бібліотеці ж одна картотека?
       */
-    public Library(ArrayList<ReadingRoom> rooms, ArrayList<Publication> publications, CardIndex cardIndex) {
+    public Library(ArrayList<ReadingRoom> rooms, ArrayList<Publication> gives, CardIndex cardIndex) {
         this.rooms = rooms;
-        this.publications = publications;
+        this.gives = gives;
         this.cardIndex = cardIndex;
     }
 
@@ -27,12 +27,11 @@ public class Library {
     */
     public Library() {
         this.rooms = new ArrayList<ReadingRoom>();
-        this.publications = new ArrayList<Publication>();
+        this.gives = new ArrayList<Publication>();
         this.cardIndex = new CardIndex();
     }
     public void AddPublication(Publication publication){
-        //Ще не реалізовано
-        cardIndex.addPublication(publication);
+        cardIndex.AddPublication(publication);
 }
 
     public ArrayList<ReadingRoom> getRooms() {
@@ -43,17 +42,17 @@ public class Library {
         this.rooms = rooms;
     }
 
-    public ArrayList<Publication> getPublications() {
-        return publications;
+    public ArrayList<Publication> getGives() {
+        return gives;
     }
 
-    public void setPublications(ArrayList<Publication> publications) {
-        this.publications = publications;
+    public void setGives(ArrayList<Publication> gives) {
+        this.gives = gives;
     }
 
     public CardIndex getCardIndex() {
         return cardIndex;
-    }
+        }
 
     public void setCardIndex(CardIndex cardIndex) {
         this.cardIndex = cardIndex;

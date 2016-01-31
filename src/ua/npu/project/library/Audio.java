@@ -4,9 +4,9 @@ package ua.npu.project.library;
 
 public class Audio extends Publication{
 
-    public String format;
-    public double lenght;
-    public int bitrate;
+    protected String format;
+    protected double lenght;
+    protected int bitrate;
 
     public Audio(String format, double lenght, int bitrate) {
         this.format = format;
